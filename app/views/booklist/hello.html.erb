@@ -2,3 +2,16 @@
 <p>
 こんにちは。お元気ですか。
 </p>
+<%# comment %>
+<% %>
+<%= "Count to 10" %>
+<br />
+<% 11.times do |i| %>
+  <%= i %>
+<% end %>
+
+<% if(params.has_key?(:id) &&
+      params.has_key?(:random)) %>
+      <%= "ID: #{params[:id]}" %><br />
+      <%= "RANDOM: #{params[:random]}" %><br />
+<% end %>
